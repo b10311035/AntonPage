@@ -159,7 +159,7 @@ a:focus {
 .header.header-scrolled .logo {
   color: #40babd;
   padding-top: 12px;
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .header.header-scrolled .logo .logo-icon-wrapper {
@@ -175,26 +175,25 @@ a:focus {
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   text-align: center;
-  padding-top:3px;
-  
 }
 
-.header.header-scrolled .logo .logo-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 0;
+.header.header-scrolled .logo .logo-icon 
+{
+  width: 25px;
+  height: 25px;
 }
 
-.header.header-scrolled .main-nav .nav .nav-link {
-  color: #a2a6af;
+.header.header-scrolled .main-nav .nav .nav-link 
+{
+  color: #777;
 }
 
 .header.header-scrolled .main-nav .nav .nav-link:hover {
-  color: #9499a3;
+  color: #999;
 }
 
 .header.header-scrolled .main-nav .nav .nav-link.active {
-  color: #494d55;
+  color: #000;
   border-bottom: 4px solid #40babd;
 }
 
@@ -215,9 +214,9 @@ a:focus {
   margin: 0;
   display: inline-block;
   float: left;
-  font-size: 26px;
-  padding-top: 15px;
-  font-family: Arial, DFKai-sb;
+  font-size: 30px;
+  padding-top: 12px;
+  font-family: Arial, Microsoft JhengHei;
   font-weight: 500px;
 }
 
@@ -241,7 +240,7 @@ a:focus {
 }
 
 .main-nav {
-  margin-top: 6px;
+  margin-top: 3px;
 }
 
 .main-nav .navbar-toggler {
@@ -282,10 +281,10 @@ a:focus {
   background-color: #fff;
 }
 
-.main-nav .nav .nav-item {
+.main-nav .nav .nav-item 
+{
   font-weight: normal;
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 18px;
 }
 
 .main-nav .nav .nav-item .nav-link {
@@ -468,15 +467,6 @@ a:focus {
   margin-bottom:50px;
 }
 
-.Home-section .section-title 
-{
-  margin: 0;
-  margin-bottom: 40px;
-  font-size: 42px;
-  font-weight: 400;
-  font-family: serif, Microsoft JhengHei;
-}
-
 .Home-section .intro 
 {
   color: #222;
@@ -485,11 +475,6 @@ a:focus {
   margin: 0 auto;
   font-family: Arial, Microsoft JhengHei;
   font-weight: 300;
-}
-
-.Home-section .intro .intro-image 
-{
-  padding-top: 20px;
 }
 
 /* ======= // Home Section ======= */
@@ -512,14 +497,6 @@ a:focus {
 	margin-left:50px;
 }
 
-.about-section .about-section-title 
-{
-  font-size:42px;
-  font-family: Arial, Microsoft JhengHei;
-  font-weight:400;
-  margin-top:30px;
-  margin-bottom:50px;
-}
 .about-section .about-title 
 {
 	font-size:30px;
@@ -573,14 +550,17 @@ a:focus {
 .experience nav .experience-nav a
 {
 	font-family: Arial, Microsoft JhengHei;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 	
-    color:#000000;
+    color:#333;
 	background: #CCCCCC;
 	
-	margin-left:1.5px;
-	padding:10px;
+	margin-left:2.5px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
 }
 .experience nav .experience-nav .active
 {
@@ -602,111 +582,10 @@ a:focus {
 	margin-bottom: 20px;
 	margin-left: 10px;
 }
-/* ======= Pricing Section ======= */
-.pricing-section {
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.pricing-section .section-title {
-  margin: 0;
-  margin-bottom: 15px;
-  font-size: 36px;
-  font-weight: 300;
-}
-
-.pricing-section .intro {
-  color: #a2a6af;
-  font-size: 16px;
-  max-width: 760px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-
-.pricing-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.pricing-wrapper .item {
-  margin-bottom: 30px;
-}
-
-.pricing-wrapper .item-inner {
-  color: #fff;
-  padding: 30px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  background: #40babd;
-  height: 100%;
-}
-
-.pricing-wrapper .item-inner a {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.pricing-wrapper .item-1 .item-inner {
-  background: #75c181;
-}
-
-.pricing-wrapper .item-2 .item-inner {
-  background: #58bbee;
-}
-
-.pricing-wrapper .item-3 .item-inner {
-  background: #F8A13F;
-}
-
-.pricing-wrapper .item-heading {
-  font-weight: 800;
-  font-size: 18px;
-  margin: 0;
-  min-height: 60px;
-}
-
-.pricing-wrapper .item-heading-desc {
-  font-size: 14px;
-  font-weight: normal;
-  display: inline-block;
-  line-height: 3;
-}
-
-.pricing-wrapper .price-figure {
-  font-size: 46px;
-  margin-bottom: 15px;
-}
-
-.pricing-wrapper .price-figure .currency {
-  vertical-align: super;
-  font-size: 26px;
-  -webkit-opacity: 0.6;
-  -moz-opacity: 0.6;
-  opacity: 0.6;
-}
-
-.pricing-wrapper .price-figure .number {
-  font-weight: 500;
-}
-
-.pricing-wrapper a.btn {
-  background: rgba(0, 0, 0, 0.2);
-  color: #fff;
-}
-
-.pricing-wrapper a.btn:hover {
-  background: rgba(0, 0, 0, 0.4);
-}
 
 /* ======= Team Section ======= */
 .team-section 
 {
-	
   padding-top: 50px;
   padding-bottom: 40px;
   
@@ -875,14 +754,7 @@ a:focus {
   margin-top:50px;
   margin-bottom:50px;
 }
-.project-section .project-title 
-{
-  font-size:42px;
-  font-family: Arial, Microsoft JhengHei;
-  font-weight:400;
-  margin-top:30px;
-  margin-bottom:50px;
-}
+
 /* ======= project Section ======= */
 
 /* ======= Contact Section ======= */
@@ -905,6 +777,24 @@ a:focus {
   max-width: 600px;
   margin: 0 auto;
   margin-bottom: 60px;
+}
+
+/* ======= 統一使用 ======= */
+.per_page_title
+{
+	margin-bottom: 60px;
+	font-size: 40px;
+	font-weight: 400;
+	font-family: Arial, Microsoft JhengHei;
+}
+.working_image 
+{
+	margin: 30px;
+}
+.per_text_image
+{
+	margin-top:15px;
+	margin-bottom:15px;
 }
 
 @media (max-width: 767.98px) {
