@@ -132,6 +132,8 @@ a:focus {
 }
 
 /* ======= Header ======= */
+
+/* 整個標頭 */
 .header {
   position: fixed;
   width: 100%;
@@ -145,24 +147,31 @@ a:focus {
   background-color:#222;
 }
 
-.header.header-scrolled {
+/* 在閱讀內容時，整個標頭 */
+.header.header-scrolled 
+{
   background: #fff;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
-.header.header-scrolled a {
+/* 在閱讀內容時，標頭上所有a物件，原本494d55*/
+.header.header-scrolled a 
+{
   color: #494d55;
 }
 
+/* 在閱讀內容時，標頭內的招牌字 */
 .header.header-scrolled .logo {
   color: #40babd;
   padding-top: 12px;
   font-size: 30px;
 }
 
-.header.header-scrolled .logo .logo-icon-wrapper {
+/* 在閱讀內容時圖標的外層 */
+.header.header-scrolled .logo .logo-icon-wrapper 
+{
   background: #40babd;
   width: 40px;
   height: 40px;
@@ -177,26 +186,35 @@ a:focus {
   text-align: center;
 }
 
+/* 在閱讀內容時的圖標 */
 .header.header-scrolled .logo .logo-icon 
 {
   width: 25px;
   height: 25px;
 }
 
+/* 在閱讀內容時的標頭，原本a2a6af */
 .header.header-scrolled .main-nav .nav .nav-link 
 {
   color: #777;
 }
 
-.header.header-scrolled .main-nav .nav .nav-link:hover {
+/* 在閱讀內容時，鼠標放在標頭，原本9499a3 */
+.header.header-scrolled .main-nav .nav .nav-link:hover 
+{
   color: #999;
 }
 
-.header.header-scrolled .main-nav .nav .nav-link.active {
+/* 在閱讀內容時，active 頁面的標頭，原本494d55*/
+.header.header-scrolled .main-nav .nav .nav-link.active 
+{
   color: #000;
+  
+  /* active 頁面的底線 */
   border-bottom: 4px solid #40babd;
 }
 
+/* 沒在閱讀時，標頭的所有a物件 */
 .header a {
   color: #fff;
   -webkit-transition: none;
@@ -205,10 +223,12 @@ a:focus {
   -o-transition: none;
 }
 
+/* 沒在閱讀時，標頭的任何a物件，鼠標放在的標頭 */
 .header a:hover {
   text-decoration: none;
 }
 
+/* 沒在閱讀時，標頭的招牌字 */
 .header .logo 
 {
   margin: 0;
@@ -220,29 +240,36 @@ a:focus {
   font-weight: 500px;
 }
 
-.header .logo .logo-icon-wrapper {
+/* 沒在閱讀時，標頭圖標的外層 */
+.header .logo .logo-icon-wrapper 
+{
   margin-right: 3px;
   position: relative;
   display: inline-block;
   top: -3px;
 }
 
+/* 沒在閱讀時，標頭的圖標 */
 .header .logo .logo-icon {
   width: 30px;
   height: 30px;
 }
 
+/*
 .header .logo .logo-title 
 {
   font-weight: 700;
   font-family: Arial, DFKai-sb;
-  font-size:30px;
+  font-size:300px;
 }
+*/
 
+/* 整個主選單 */
 .main-nav {
   margin-top: 3px;
 }
 
+/* 當頁面被縮小時，整個"三"主選單的圖標 */
 .main-nav .navbar-toggler {
   margin-right: 0;
   margin-top: 0;
@@ -254,10 +281,12 @@ a:focus {
   background: rgba(0, 0, 0, 0.6);
 }
 
+/* 頁面縮小時，整個"三"主選單的圖標被點選時 */
 .main-nav .navbar-toggler:focus {
   outline: none;
 }
 
+/* 頁面縮小時，"三"主選單的內層 */
 .main-nav .navbar-toggler .icon-bar {
   display: block;
   background-color: #fff;
@@ -273,55 +302,66 @@ a:focus {
   background-clip: padding-box;
 }
 
+/* 頁面縮小時，"三"主選單的內底下兩層 */
 .main-nav .navbar-toggler .icon-bar + .icon-bar {
   margin-top: 4px;
 }
 
+/* 頁面縮小時，鼠標移動到的"三"主選單 */
 .main-nav .navbar-toggler:hover .icon-bar {
   background-color: #fff;
 }
 
+/* 主選單的每個項目 (包括頁面縮小時) */
 .main-nav .nav .nav-item 
 {
   font-weight: normal;
   font-size: 18px;
 }
 
+/* 主選單的每個可以點選的項目 (包括頁面縮小時) */
 .main-nav .nav .nav-item .nav-link {
   color: white;
   font-weight: 700;
 }
 
+/* 主選單的每個可以點選且正在閱讀頁面的項目 (包括頁面縮小時) */
 .main-nav .nav .nav-item .nav-link.active {
   position: relative;
   background: none;
   color: #fff;
 }
 
+/* 主選單的每個可以點選且鼠標位置的項目 (包括頁面縮小時) */
 .main-nav .nav .nav-item .nav-link:hover {
   color: #fff;
   background: none;
 }
 
+/* 主選單的每個可以點選且已選曲的項目 (包括頁面縮小時) */
 .main-nav .nav .nav-item .nav-link:focus {
   outline: none;
   background: none;
 }
 
+/* 主選單的每個可以點選且已選曲的項目 (包括頁面縮小時) */
 .main-nav .nav .nav-item .nav-link:active {
   outline: none;
   background: none;
 }
 
+/* 主選單的每個可以點選的項目，最後一個子元素 (包括頁面縮小時) */
 .main-nav .nav .nav-item:last-child {
   margin-right: 0;
 }
 
+/* 所有父元素nav元素的li的每個a子元素編寫 */
 .nav > li > a {
   padding-left: 5px;
   padding-right: 5px;
 }
 
+/* 所有可以點選的項目(nav-link 類別) */
 .nav-link {
   padding: 15px;
 }
@@ -795,6 +835,34 @@ a:focus {
 {
 	margin-top:15px;
 	margin-bottom:15px;
+}
+.modal-title
+{
+	margin-left: 40%;
+	font-size:26px;
+	font-family: Arial, Microsoft JhengHei;
+	font-weight: 400px;
+}
+.modal-body
+{
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:80px;
+	padding-right:80px;
+	
+	font-size:20px;
+	font-family: Arial, Microsoft JhengHei;
+}
+.btn-secondary
+{
+	width:100px;
+	height:40px;
+	font-size:16px;
+}
+/* ======= 後面增加 ======= */
+.modal_body_intro
+{
+	padding-top:20px;
 }
 
 @media (max-width: 767.98px) {
